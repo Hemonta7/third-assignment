@@ -27,7 +27,7 @@
         extend: {
           colors: {
             'common-orange': '#ff4240',
-            'common-white': '#424247',
+            'common-white': 'rgba(19, 19, 24, 0.60)',
           }
         }
       }
@@ -38,7 +38,7 @@
 <body class="font-manrope">
   <header>
     <!-- navbar section  -->
-    <nav class="container mx-auto my-3 lg:my-12">
+    <nav class=" max-w-6xl mx-auto my-3 lg:my-12">
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -56,7 +56,7 @@
               <li><a class="text-base font-normal">Contact</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost text-black text-2xl lg:text-4xl font-extrabold pl-0">Hockey’s</a>
+          <a class="text-black text-2xl lg:text-4xl font-extrabold pl-0">Hockey<span class="text-common-orange">’</span>s</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1">
@@ -81,13 +81,13 @@
           </ul>
         </div>
         <div class="navbar-end space-x-7">
-          <i class="fa-solid text-common-white hidden lg:contents fa-magnifying-glass"></i>
+          <i class="fa-solid text-[#424247] hidden lg:contents fa-magnifying-glass"></i>
           <a class="btn bg-common-orange text-white py-3 px-4 lg:px-8">Get Ticket</a>
         </div>
       </div>
     </nav>
     <!-- banner section  -->
-    <div class="container mx-auto">
+    <div class="max-w-6xl mx-auto">
       <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
           <img src="./Images/1.png" class="w-full p-4 lg:p-0" />
@@ -108,54 +108,54 @@
   </header>
   <main>
     <!-- hockey club section  -->
-    <section class="container mx-auto mt-6 lg:mt-24 lg:mb-10">
+    <section class="max-w-6xl mx-auto mt-6 lg:mt-24 lg:mb-10">
       <div class=" space-y-2 lg:space-y-5 text-center">
         <hr class="border-dashed">
         <h3 class=" text-xl lg:text-4xl font-extrabold">Professional Hockeys Club</h3>
-        <p class="text-xs px-3 lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+        <p class="text-xs text-common-white px-3 lg:text-base font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
           turpis placerat dolor. Purus urna in sit nullam proin. </p>
         <hr class="border-dashed">
       </div>
     </section>
     <!-- Radial progress section  -->
-    <section class="container mx-auto">
+    <section class="max-w-6xl mx-auto">
       <div class="flex justify-around flex-col lg:flex-row">
         <div class="text-center space-y-2 lg:space-y-4 mt-5 lg:mt-0">
           <div class="radial-progress text-red-500 text-xl font-extrabold" style="--value:87;" role="progressbar">87%</div>
           <h5 class="text-xl font-semibold">Prayer Facility</h5>
-          <p class="px-7 text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <p class="px-7 text-common-white text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
         <div class="text-center space-y-2 lg:space-y-4 mt-5 lg:mt-0">
           <div class="radial-progress text-green-500 text-xl font-extrabold" style="--value:95;" role="progressbar">95%</div>
           <h5 class="text-xl font-semibold">Experienced Coach</h5>
-          <p class="px-7">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <p class="px-7 text-common-white">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
         <div class="text-center space-y-2 lg:space-y-4 mt-5 lg:mt-0">
-          <div class="radial-progress text-red-500 text-xl font-extrabold" style="--value:90;" role="progressbar">90%</div>
+          <div class="radial-progress text-yellow-400 text-xl font-extrabold" style="--value:90;" role="progressbar">90%</div>
           <h5 class="text-xl font-semibold">Senior Player</h5>
-          <p class="px-7">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <p class="px-7 text-common-white">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
         <div class="text-center space-y-2 lg:space-y-4 mt-5 lg:mt-0">
-          <div class="radial-progress text-green-500 text-xl font-extrabold" style="--value:80;" role="progressbar">80%</div>
+          <div class="radial-progress text-blue-500 text-xl font-extrabold" style="--value:80;" role="progressbar">80%</div>
           <h5 class="text-xl font-semibold">Training Ground</h5>
-          <p class="px-7">Amet consectetur. Condimentum dignissim adipiscing .</p>
+          <p class="px-7 text-common-white">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
       </div>
     </section>
     <!-- Program Section -->
-    <section class="container mx-auto">
+    <section class="max-w-6xl mx-auto">
       <div class="mt-10 lg:mt-24 text-center mb-4 lg:mb-12 space-y-4 lg:space-y-6">
         <hr class="border-dashed">
       <h3 class="text-2xl lg:text-4xl font-extrabold px-18">Program Sections</h3>
-      <p class="text-sm lg:text-base font-medium px-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+      <p class="text-common-white text-sm lg:text-base font-medium px-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
       <hr class="border-dashed">
       </div>
     </section>
     <!-- grid section  -->
-    <section class="container mx-auto">
+    <section class="max-w-6xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <!-- photo-1  -->
-        <div class="card w-96 bg-base-100 shadow-xl image-full row-span-1">
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
           <figure><img src="./Images/2.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title">Shoes!</h2>
@@ -166,7 +166,7 @@
           </div>
         </div>
         <!-- photo-2 -->
-        <div class="card w-96 bg-base-100 shadow-xl image-full row-span-1">
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
           <figure><img src="./Images/3.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title">Shoes!</h2>
@@ -177,7 +177,7 @@
           </div>
         </div>
         <!-- photo-3  -->
-        <div class="card w-96 bg-base-100 shadow-xl image-full col-span-2">
+        <div class="card w-96 bg-base-100 shadow-xl image-full row-span-2">
           <figure><img src="./Images/4.png" alt="Shoes" /></figure>
           <div class="card-body">
             <h2 class="card-title">Shoes!</h2>
@@ -190,16 +190,14 @@
       </div>
     </section>
     <!-- new products section -->
-    <section>
-      <section class="container mx-auto">
+      <section class="max-w-6xl mx-auto">
         <div class="mt-10 lg:mt-24 text-center mb-4 lg:mb-12 space-y-4 lg:space-y-6">
           <hr class="border-dashed">
         <h3 class="text-2xl lg:text-4xl font-extrabold px-18">Our New Products</h3>
-        <p class="text-sm lg:text-base font-medium px-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+        <p class="text-common-white text-sm lg:text-base font-medium px-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
         <hr class="border-dashed">
         </div>
       </section>
-    </section>
   </main>
   <footer>
   </footer>
