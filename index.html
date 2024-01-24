@@ -42,7 +42,7 @@
       <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
@@ -95,13 +95,6 @@
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
-            <div
-              class="h-24 w-full lg:h-44 lg:w-[540px] lg:mx-auto bg-black rounded-2xl absolute -bottom-40 lg:right-4 lg:-bottom-60 z-[9999]">
-              <h5 class="text-sm lg:text-2xl font-extrabold text-white p-4 pb-0 lg:pl-8 lg:pt-8">Meet all the heroes
-                from the field</h5>
-              <p class="text-xs font-normal text-[#ffffff] opacity-60 pt-0 p-4 lg:p-8 lg:pt-3">Dit amet consectetur.
-                Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-            </div>
           </div>
         </div>
         <div id="slide2" class="carousel-item relative w-full">
@@ -109,15 +102,15 @@
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
             <a href="#slide1" class="btn btn-circle">❯</a>
-            <div
-              class="h-24 w-full lg:h-44 lg:w-[540px] lg:mx-auto bg-black rounded-2xl absolute -bottom-40 lg:right-4 lg:-bottom-60">
-              <h5 class="text-sm lg:text-2xl font-extrabold text-white p-4 pb-0 lg:pl-8 lg:pt-8">Meet all the heroes
-                from the field</h5>
-              <p class="text-xs font-normal text-[#ffffff] opacity-60 pt-0 p-4 lg:p-8 lg:pt-3">Dit amet consectetur.
-                Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
-            </div>
           </div>
         </div>
+      </div>
+      <div
+        class="h-24 lg:h-44 lg:w-[540px] mx-auto space-y-4 bg-black rounded-2xl lg:absolute -bottom-40 lg:right-32 lg:-bottom-28">
+        <h5 class="text-sm lg:text-2xl font-extrabold text-white p-4 pb-0 lg:pl-8 lg:pt-8">Meet all the heroes
+          from the field</h5>
+        <p class="text-xs font-normal text-[#ffffff] opacity-60 pt-0 p-4 lg:p-8 lg:pt-3">Dit amet consectetur.
+          Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
       </div>
     </div>
   </header>
@@ -137,26 +130,30 @@
     <section class="max-w-6xl mx-auto">
       <div class="flex justify-around flex-col lg:flex-row">
         <div class="text-center space-y-2 lg:space-y-4 mt-5 lg:mt-0">
-          <div class="radial-progress text-red-500 text-xl font-extrabold" style="--value:87;" role="progressbar">87%
+          <div class="radial-progress text-red-500 text-xl font-extrabold" style="--value:87;" role="progressbar"><span
+              class="text-black">87%</span>
           </div>
           <h5 class="text-xl font-semibold">Prayer Facility</h5>
           <p class="px-7 text-common-white text-base font-normal">Amet consectetur. Condimentum dignissim adipiscing .
           </p>
         </div>
         <div class="text-center space-y-2 lg:space-y-4 mt-5 lg:mt-0">
-          <div class="radial-progress text-green-500 text-xl font-extrabold" style="--value:95;" role="progressbar">95%
+          <div class="radial-progress text-green-500 text-xl font-extrabold" style="--value:95;" role="progressbar">
+            <span class="text-black">95%</span>
           </div>
           <h5 class="text-xl font-semibold">Experienced Coach</h5>
           <p class="px-7 text-common-white">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
         <div class="text-center space-y-2 lg:space-y-4 mt-5 lg:mt-0">
-          <div class="radial-progress text-yellow-400 text-xl font-extrabold" style="--value:90;" role="progressbar">90%
+          <div class="radial-progress text-yellow-400 text-xl font-extrabold" style="--value:90;" role="progressbar">
+            <span class="text-black">90%</span>
           </div>
           <h5 class="text-xl font-semibold">Senior Player</h5>
           <p class="px-7 text-common-white">Amet consectetur. Condimentum dignissim adipiscing .</p>
         </div>
         <div class="text-center space-y-2 lg:space-y-4 mt-5 lg:mt-0">
-          <div class="radial-progress text-blue-500 text-xl font-extrabold" style="--value:80;" role="progressbar">80%
+          <div class="radial-progress text-blue-500 text-xl font-extrabold" style="--value:80;" role="progressbar"><span
+              class="text-black">80%</span>
           </div>
           <h5 class="text-xl font-semibold">Training Ground</h5>
           <p class="px-7 text-common-white">Amet consectetur. Condimentum dignissim adipiscing .</p>
@@ -238,7 +235,7 @@
     </section>
     <!-- new product grid  -->
     <section class="max-w-6xl mx-auto">
-      <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+      <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 px-5">
         <!-- grid photo 1  -->
         <div class="hero bg-white rounded-lg shadow-2xl border">
           <div class="hero-content flex-col lg:flex-row">
@@ -250,22 +247,22 @@
                   <p>5.0</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-regular fa-heart"></i>
+                  <img src="./Images/Frame.svg" alt="">
                   <p>200</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-solid fa-eye"></i>
+                  <img src="./Images/Frame (1).svg" alt="">
                   <p>20</p>
                 </div>
               </div>
               <h1 class="text-xl font-extrabold lg:mt-3">World Cup Flags Football</h1>
               <p class="py-6 text-base font-medium text-common-white">Dolor sit amet consectetur. Ut urna diam quis
                 sagittis.</p>
-              <div class="flex gap-4">
+              <div class="flex flex-col lg:flex-row gap-3">
                 <h6 class="text-red-600 text-lg font-extrabold">Price - $22.00</h6>
                 <div class="flex">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <p class="text-base font-medium text-common-white">Delivery Fee : Free</p>
+                  <img src="./Images/Frame (2).svg" alt="">
+                  <p class="text-base font-medium text-common-white whitespace-nowrap pl-2">Delivery Fee : Free</p>
                 </div>
               </div>
             </div>
@@ -282,22 +279,22 @@
                   <p>5.0</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-regular fa-heart"></i>
+                  <img src="./Images/Frame.svg" alt="">
                   <p>200</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-solid fa-eye"></i>
+                  <img src="./Images/Frame (1).svg" alt="">
                   <p>20</p>
                 </div>
               </div>
               <h1 class="text-xl font-extrabold lg:mt-3">World Cup Flags Football</h1>
               <p class="py-6 text-base font-medium text-common-white">Dolor sit amet consectetur. Ut urna diam quis
                 sagittis.</p>
-              <div class="flex gap-4">
+              <div class="flex flex-col lg:flex-row gap-3">
                 <h6 class="text-red-600 text-lg font-extrabold">Price - $22.00</h6>
                 <div class="flex">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <p class="text-base font-medium text-common-white">Delivery Fee : Free</p>
+                  <img src="./Images/Frame (2).svg" alt="">
+                  <p class="text-base font-medium text-common-white whitespace-nowrap pl-2">Delivery Fee : Free</p>
                 </div>
               </div>
             </div>
@@ -314,22 +311,22 @@
                   <p>5.0</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-regular fa-heart"></i>
+                  <img src="./Images/Frame.svg" alt="">
                   <p>200</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-solid fa-eye"></i>
+                  <img src="./Images/Frame (1).svg" alt="">
                   <p>20</p>
                 </div>
               </div>
               <h1 class="text-xl font-extrabold lg:mt-3">World Cup Flags Football</h1>
               <p class="py-6 text-base font-medium text-common-white">Dolor sit amet consectetur. Ut urna diam quis
                 sagittis.</p>
-              <div class="flex gap-4">
+              <div class="flex flex-col lg:flex-row gap-3">
                 <h6 class="text-red-600 text-lg font-extrabold">Price - $22.00</h6>
                 <div class="flex">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <p class="text-base font-medium text-common-white">Delivery Fee : Free</p>
+                  <img src="./Images/Frame (2).svg" alt="">
+                  <p class="text-base font-medium text-common-white whitespace-nowrap pl-2">Delivery Fee : Free</p>
                 </div>
               </div>
             </div>
@@ -346,22 +343,22 @@
                   <p>5.0</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-regular fa-heart"></i>
+                  <img src="./Images/Frame.svg" alt="">
                   <p>200</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-solid fa-eye"></i>
+                  <img src="./Images/Frame (1).svg" alt="">
                   <p>20</p>
                 </div>
               </div>
               <h1 class="text-xl font-extrabold lg:mt-3">World Cup Flags Football</h1>
               <p class="py-6 text-base font-medium text-common-white">Dolor sit amet consectetur. Ut urna diam quis
                 sagittis.</p>
-              <div class="flex gap-4">
+              <div class="flex flex-col lg:flex-row gap-3">
                 <h6 class="text-red-600 text-lg font-extrabold">Price - $22.00</h6>
                 <div class="flex">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <p class="text-base font-medium text-common-white">Delivery Fee : Free</p>
+                  <img src="./Images/Frame (2).svg" alt="">
+                  <p class="text-base font-medium text-common-white whitespace-nowrap pl-2">Delivery Fee : Free</p>
                 </div>
               </div>
             </div>
@@ -378,22 +375,22 @@
                   <p>5.0</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-regular fa-heart"></i>
+                  <img src="./Images/Frame.svg" alt="">
                   <p>200</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-solid fa-eye"></i>
+                  <img src="./Images/Frame (1).svg" alt="">
                   <p>20</p>
                 </div>
               </div>
               <h1 class="text-xl font-extrabold lg:mt-3">World Cup Flags Football</h1>
               <p class="py-6 text-base font-medium text-common-white">Dolor sit amet consectetur. Ut urna diam quis
                 sagittis.</p>
-              <div class="flex gap-4">
+              <div class="flex flex-col lg:flex-row gap-3">
                 <h6 class="text-red-600 text-lg font-extrabold">Price - $22.00</h6>
                 <div class="flex">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <p class="text-base font-medium text-common-white">Delivery Fee : Free</p>
+                  <img src="./Images/Frame (2).svg" alt="">
+                  <p class="text-base font-medium text-common-white whitespace-nowrap pl-2">Delivery Fee : Free</p>
                 </div>
               </div>
             </div>
@@ -410,22 +407,22 @@
                   <p>5.0</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-regular fa-heart"></i>
+                  <img src="./Images/Frame.svg" alt="">
                   <p>200</p>
                 </div>
                 <div class="flex gap-1">
-                  <i class="fa-solid fa-eye"></i>
+                  <img src="./Images/Frame (1).svg" alt="">
                   <p>20</p>
                 </div>
               </div>
               <h1 class="text-xl font-extrabold lg:mt-3">World Cup Flags Football</h1>
               <p class="py-6 text-base font-medium text-common-white">Dolor sit amet consectetur. Ut urna diam quis
                 sagittis.</p>
-              <div class="flex gap-4">
+              <div class="flex flex-col lg:flex-row gap-3">
                 <h6 class="text-red-600 text-lg font-extrabold">Price - $22.00</h6>
-                <div class="flex flex-col lg:flex-row">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  <p class="text-base font-medium text-common-white">Delivery Fee : Free</p>
+                <div class="flex">
+                  <img src="./Images/Frame (2).svg" alt="">
+                  <p class="text-base font-medium text-common-white whitespace-nowrap pl-2">Delivery Fee : Free</p>
                 </div>
               </div>
             </div>
@@ -447,7 +444,7 @@
     </section>
     <!-- accordian section  -->
     <section class="max-w-6xl mx-auto">
-      <div class="flex gap-10 flex-col lg:flex-row rounded-lg shadow-2xl border lg:p-9">
+      <div class="flex gap-10 p-5 flex-col lg:flex-row rounded-lg shadow-2xl border lg:p-9">
         <div>
           <img src="./Images/11.png" alt="">
         </div>
@@ -458,7 +455,8 @@
               Our Equipment
             </div>
             <div class="collapse-content">
-              <p class="text-common-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+              <p class="text-common-white text-sm lg:text-base font-normal">Dolor sit amet consectetur. Ut urna diam
+                quis sagittis. Elit elit enim
                 sagittis turpis in magna.</p>
             </div>
           </div>
@@ -469,7 +467,7 @@
               Hockey Training
             </div>
             <div class="collapse-content">
-              <p class="text-common-white">hello</p>
+              <p class="text-common-white text-sm lg:text-base font-normal">hello</p>
             </div>
           </div>
           <hr>
@@ -479,7 +477,7 @@
               Private Lessons
             </div>
             <div class="collapse-content">
-              <p class="text-common-white">hello</p>
+              <p class="text-common-white text-sm lg:text-base font-normal">hello</p>
             </div>
           </div>
           <hr>
@@ -489,7 +487,7 @@
               Ski Touring
             </div>
             <div class="collapse-content">
-              <p class="text-common-white">hello</p>
+              <p class="text-common-white text-sm lg:text-base font-normal">hello</p>
             </div>
           </div>
           <hr>
@@ -499,7 +497,7 @@
               Booking
             </div>
             <div class="collapse-content">
-              <p class="text-common-white">hello</p>
+              <p class="text-common-white text-sm lg:text-base font-normal">hello</p>
             </div>
           </div>
           <hr>
@@ -509,7 +507,7 @@
               Pricings
             </div>
             <div class="collapse-content">
-              <p class="text-common-white">hello</p>
+              <p class="text-common-white text-sm lg:text-base font-normal">hello</p>
             </div>
           </div>
         </div>
